@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register Page</title>
+  <style>
+    body {
+      font-family: Ubuntu, sans-serif;
+      background-color: #f1f1f1;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      display: flex;
+      justify-content: center;
+      
+      width: 105%;
+      padding: 10px;
+      background-color: #1976d2;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+
+<script>
+  function getUserId() {
+    var userId = prompt("Please enter your ID:");
+    if (userId) {
+      document.getElementById("userId").textContent = "User ID: " + userId;
+    }
+  }
+</script>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form action="index.html">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="Register" act>
+    </form>
+      <p>Already have an account? <a href="index.html">Login here</a>.</p>
+  </div>
+</body>
+</html>
