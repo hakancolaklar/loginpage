@@ -94,3 +94,38 @@ body   {
     border-bottom: 2px solid #1976d2;
     box-shadow: 0 1px 0 0 #1976d2;
 }
+
+.login-form > button {
+    width: 240px;
+    background-color: #1976d2;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-form > a {
+    color: #1976d2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-form > a:hover {
+    color: #303f9f;
+}
+
+@media (width >= 500px) {
+    .body {
+        padding: 0;
+    }
+}
+
+@media (width >= 1200px) {
+    .login {
+        width: 25%;
+    }
+}
