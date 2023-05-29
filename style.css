@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    
+    box-sizing: border-box;
+}
+
+html, body  {
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body   {
+    display: flex;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-color: #da00ff;
+    background-image: radial-gradient(at 88% 0%,
+      hsla(327, 67%, 64%, 1) 0px,
+      transparent 50%),
+    radial-gradient(at 63% 46%, hsla(307, 76%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 95% 53%, hsla(89, 91%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 83%, hsla(170, 86%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 74% 93%, hsla(71, 93%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 13%, hsla(110, 83%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 30% 80%, hsla(263, 79%, 66%, 1) 0px, transparent 50%);
+    color: #000;
+}
+
+.login  {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 80%;
+    padding: 70px 30px 44px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.login > img    {
+    width: 120px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.login > h2 {
+    font-size: 36px;
+    margin: 0 0 25px;
+}
+
+.login > h3 {
+    color: rgba(0, 0, 0, 0.45);
+    margin: 0 0 6px;
+    font-size: 16px;
+}
