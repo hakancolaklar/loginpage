@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Login Page</title>
-
+      
 </head>
 <body>
 
@@ -17,10 +17,11 @@
         <h2>Tecnical</h2>
         <form class="login-form" action="activities.html">
             <input type="type-password" placeholder="Enter your password">
-            <button type="submit">LOGIN</button>
+            <button onclick="password()">LOGIN</button>
             <a href="#">Forget your password?</a>
         </form> 
         <button class="sign-in-button" onclick="location.href='register.html'">Sign In</button>
+        <p id="error-message"></p>
     </div>
     
 </body>
